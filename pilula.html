@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavra Aleatória</title>
+    <script>
+        function palavraAleatoria() {
+            // Lista de palavras
+            var palavras = ["beijo", "sexo", "banho juntos", "passeio", "jantar fora"];
+
+            // Escolher um índice aleatório da lista
+            var indiceAleatorio = Math.floor(Math.random() * palavras.length);
+
+            // Pegar a palavra correspondente ao índice aleatório
+            var palavraEscolhida = palavras[indiceAleatorio];
+
+            // Exibir a palavra na tela
+            document.getElementById("palavra-aleatoria").innerText = "Palavra escolhida: " + palavraEscolhida;
+        }
+    </script>
+</head>
+<body>
+    <h1>Palavra Aleatória</h1>
+    <button onclick="palavraAleatoria()">Gerar Palavra Aleatória</button>
+    <p id="palavra-aleatoria"></p>
+</body>
+</html>
